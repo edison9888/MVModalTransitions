@@ -21,6 +21,11 @@
 		659A18E318E47E9D00310711 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659A18C518E47E9D00310711 /* UIKit.framework */; };
 		659A18EB18E47E9D00310711 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659A18E918E47E9D00310711 /* InfoPlist.strings */; };
 		659A18ED18E47E9D00310711 /* MVModalTransitionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 659A18EC18E47E9D00310711 /* MVModalTransitionsTests.m */; };
+		659A18FB18E47F4000310711 /* MVModalTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 659A18F818E47F4000310711 /* MVModalTransition.m */; };
+		659A18FC18E47F4000310711 /* MVPopupTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 659A18FA18E47F4000310711 /* MVPopupTransition.m */; };
+		659E441F18E481B00054C778 /* MVCustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 659E441E18E481B00054C778 /* MVCustomAlertView.m */; };
+		A2F636D0B7644A2B8EEF3970 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E2B75D5CA54B6399730D42 /* libPods.a */; };
+		ABC35C6DEEB093320E115FFA /* MVPickerAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC354C3B2F696EB81DC3363 /* MVPickerAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21E2B75D5CA54B6399730D42 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		37EB821361DE4A39A693B4F9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		659A18BE18E47E9D00310711 /* MVModalTransitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVModalTransitions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		659A18C118E47E9D00310711 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		659A18C318E47E9D00310711 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +60,14 @@
 		659A18E818E47E9D00310711 /* MVModalTransitionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MVModalTransitionsTests-Info.plist"; sourceTree = "<group>"; };
 		659A18EA18E47E9D00310711 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		659A18EC18E47E9D00310711 /* MVModalTransitionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVModalTransitionsTests.m; sourceTree = "<group>"; };
+		659A18F718E47F4000310711 /* MVModalTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVModalTransition.h; sourceTree = "<group>"; };
+		659A18F818E47F4000310711 /* MVModalTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVModalTransition.m; sourceTree = "<group>"; };
+		659A18F918E47F4000310711 /* MVPopupTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPopupTransition.h; sourceTree = "<group>"; };
+		659A18FA18E47F4000310711 /* MVPopupTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPopupTransition.m; sourceTree = "<group>"; };
+		659E441D18E481B00054C778 /* MVCustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVCustomAlertView.h; sourceTree = "<group>"; };
+		659E441E18E481B00054C778 /* MVCustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVCustomAlertView.m; sourceTree = "<group>"; };
+		ABC354C3B2F696EB81DC3363 /* MVPickerAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPickerAlertView.m; sourceTree = "<group>"; };
+		ABC35D888074DE63546F5208 /* MVPickerAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPickerAlertView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +78,7 @@
 				659A18C418E47E9D00310711 /* CoreGraphics.framework in Frameworks */,
 				659A18C618E47E9D00310711 /* UIKit.framework in Frameworks */,
 				659A18C218E47E9D00310711 /* Foundation.framework in Frameworks */,
+				A2F636D0B7644A2B8EEF3970 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,10 +98,12 @@
 		659A18B518E47E9D00310711 = {
 			isa = PBXGroup;
 			children = (
+				659A18F618E47EBD00310711 /* MVModalTransition */,
 				659A18C718E47E9D00310711 /* MVModalTransitions */,
 				659A18E618E47E9D00310711 /* MVModalTransitionsTests */,
 				659A18C018E47E9D00310711 /* Frameworks */,
 				659A18BF18E47E9D00310711 /* Products */,
+				37EB821361DE4A39A693B4F9 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +123,7 @@
 				659A18C318E47E9D00310711 /* CoreGraphics.framework */,
 				659A18C518E47E9D00310711 /* UIKit.framework */,
 				659A18E018E47E9D00310711 /* XCTest.framework */,
+				21E2B75D5CA54B6399730D42 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,6 +131,8 @@
 		659A18C718E47E9D00310711 /* MVModalTransitions */ = {
 			isa = PBXGroup;
 			children = (
+				659E441D18E481B00054C778 /* MVCustomAlertView.h */,
+				659E441E18E481B00054C778 /* MVCustomAlertView.m */,
 				659A18D018E47E9D00310711 /* AppDelegate.h */,
 				659A18D118E47E9D00310711 /* AppDelegate.m */,
 				659A18D318E47E9D00310711 /* Main.storyboard */,
@@ -119,6 +140,8 @@
 				659A18D718E47E9D00310711 /* ViewController.m */,
 				659A18D918E47E9D00310711 /* Images.xcassets */,
 				659A18C818E47E9D00310711 /* Supporting Files */,
+				ABC354C3B2F696EB81DC3363 /* MVPickerAlertView.m */,
+				ABC35D888074DE63546F5208 /* MVPickerAlertView.h */,
 			);
 			path = MVModalTransitions;
 			sourceTree = "<group>";
@@ -152,6 +175,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		659A18F618E47EBD00310711 /* MVModalTransition */ = {
+			isa = PBXGroup;
+			children = (
+				659A18F718E47F4000310711 /* MVModalTransition.h */,
+				659A18F818E47F4000310711 /* MVModalTransition.m */,
+				659A18F918E47F4000310711 /* MVPopupTransition.h */,
+				659A18FA18E47F4000310711 /* MVPopupTransition.m */,
+			);
+			path = MVModalTransition;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +193,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 659A18F018E47E9D00310711 /* Build configuration list for PBXNativeTarget "MVModalTransitions" */;
 			buildPhases = (
+				A831221433BE42E3B4D26419 /* Check Pods Manifest.lock */,
 				659A18BA18E47E9D00310711 /* Sources */,
 				659A18BB18E47E9D00310711 /* Frameworks */,
 				659A18BC18E47E9D00310711 /* Resources */,
+				B04A811F0D604A9B9B534BA8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,14 +280,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A831221433BE42E3B4D26419 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B04A811F0D604A9B9B534BA8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		659A18BA18E47E9D00310711 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659A18FC18E47F4000310711 /* MVPopupTransition.m in Sources */,
 				659A18D818E47E9D00310711 /* ViewController.m in Sources */,
 				659A18D218E47E9D00310711 /* AppDelegate.m in Sources */,
+				659A18FB18E47F4000310711 /* MVModalTransition.m in Sources */,
+				659E441F18E481B00054C778 /* MVCustomAlertView.m in Sources */,
 				659A18CE18E47E9D00310711 /* main.m in Sources */,
+				ABC35C6DEEB093320E115FFA /* MVPickerAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +446,7 @@
 		};
 		659A18F118E47E9D00310711 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37EB821361DE4A39A693B4F9 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -386,6 +460,7 @@
 		};
 		659A18F218E47E9D00310711 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37EB821361DE4A39A693B4F9 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -456,6 +531,7 @@
 				659A18F218E47E9D00310711 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		659A18F318E47E9D00310711 /* Build configuration list for PBXNativeTarget "MVModalTransitionsTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +540,7 @@
 				659A18F518E47E9D00310711 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,9 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "MVCustomAlertView.h"
+#import "MVPickerAlertView.h"
 
-@interface ViewController ()
-
+@interface ViewController ()<MVCustomAlertViewClientDelegate>
+- (IBAction)popupButtonPressed:(UIButton *)sender;
 @end
 
 @implementation ViewController
@@ -25,5 +27,22 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)popupButtonPressed:(UIButton *)sender {
+
+
+    MVPickerAlertView *picker = [[MVPickerAlertView alloc] initWithTitle:@"Find the intruder" values:@[ @"Apples", @"Oranges", @"Bananas", @"Monkeys" ] presentingViewController:self delegate:self];
+    [picker show];
+
+}
+
+#pragma mark - MVCustomAlertViewClientDelegate
+- (void)customAlertViewDidCancel:(MVCustomAlertView *)alertView {
+
+}
+- (void)customAlertViewDidConfirm:(MVCustomAlertView *)alertView {
+
+}
+
 
 @end
