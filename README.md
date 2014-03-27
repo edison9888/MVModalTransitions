@@ -1,7 +1,8 @@
 
 MVModalTransitions - Andrea Bizzotto <bizz84@gmail.com>
 
--------------------------------------------------------
+=======================================================
+
 
 This is a light-weight library that shows how to present custom view controllers modally on iPad and iPhone without recurring to the UIModalPresentationFormSheet and UIModalPresentationPageSheet presentation styles which are only available on iPad.
 
@@ -11,6 +12,7 @@ The MVModalTransition class can be used as a base class to implement custom tran
 This sample project comes with a custom modal picker view that illustrates how to use this.
 
 USAGE
+-------------------------------------------------------
 
 <pre>
 @implementation PresentingViewController
@@ -44,6 +46,7 @@ USAGE
 </pre>
 
 INSTALLATION
+-------------------------------------------------------
 
 This example uses Masonry on top of Auto-Layout. The corresponding pod needs to be installed before the project can be built.
 
