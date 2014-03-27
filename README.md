@@ -3,11 +3,14 @@ MVModalTransitions - Andrea Bizzotto <bizz84@gmail.com>
 
 -------------------------------------------------------
 
-This project shows how to present custom view controllers modally on iPad and iPhone without recurring to the UIModalPresentationFormSheet and UIModalPresentationPageSheet presentation styles which are available on iPad only.
+This project shows how to present custom view controllers modally on iPad and iPhone without recurring to the UIModalPresentationFormSheet and UIModalPresentationPageSheet presentation styles which are only available on iPad.
 
-This is done by using the View Controller Transitioning APIs introduced in iOS7. Specifically, some custom classes implementing the UIViewControllerAnimatedTransitioning protocol. Please refer to the MVModalTransition and MVPopupTransition for how this is implemented.
+On iOS 7, Apple introduced the new View Controller Transitioning APIs, which are used by the MVModalTransition and MVPopupTransition classes to present non-fullscreen interface-rotation friendly modal view controllers.
+The MVModalTransition class can be used as a base class to implement custom transition and provides support for adding a semi-transparent full-screen background view.
 
-Example:
+This sample project comes with a custom modal picker view that illustrates how to use this.
+
+USAGE
 
 <pre>
 @implementation PresentingViewController
