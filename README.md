@@ -43,6 +43,14 @@ USAGE
 @end
 </pre>
 
+INSTALLATION
+
+This example uses Masonry on top of Auto-Layout. The corresponding pod needs to be installed before the project can be built.
+
+<pre>
+pod install
+</pre>
+
 License information can be found in the LICENSE.md file.
 
 ![Modal View Controllers Preview](https://github.com/bizz84/MVModalTransitions/raw/master/Screenshots/ModalPortrait.png "Modal View Controllers Preview")
