@@ -13,7 +13,6 @@
 		659A18CC18E47E9D00310711 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659A18CA18E47E9D00310711 /* InfoPlist.strings */; };
 		659A18CE18E47E9D00310711 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 659A18CD18E47E9D00310711 /* main.m */; };
 		659A18D218E47E9D00310711 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 659A18D118E47E9D00310711 /* AppDelegate.m */; };
-		659A18D518E47E9D00310711 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659A18D318E47E9D00310711 /* Main.storyboard */; };
 		659A18D818E47E9D00310711 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659A18D718E47E9D00310711 /* ViewController.m */; };
 		659A18DA18E47E9D00310711 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659A18D918E47E9D00310711 /* Images.xcassets */; };
 		659A18E118E47E9D00310711 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659A18E018E47E9D00310711 /* XCTest.framework */; };
@@ -24,6 +23,8 @@
 		659A18FB18E47F4000310711 /* MVModalTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 659A18F818E47F4000310711 /* MVModalTransition.m */; };
 		659A18FC18E47F4000310711 /* MVPopupTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 659A18FA18E47F4000310711 /* MVPopupTransition.m */; };
 		659E441F18E481B00054C778 /* MVCustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 659E441E18E481B00054C778 /* MVCustomAlertView.m */; };
+		659E442518E48CFB0054C778 /* Main-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659E442318E48CFB0054C778 /* Main-iPad.storyboard */; };
+		659E442618E48CFB0054C778 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659E442418E48CFB0054C778 /* Main.storyboard */; };
 		A2F636D0B7644A2B8EEF3970 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E2B75D5CA54B6399730D42 /* libPods.a */; };
 		ABC35C6DEEB093320E115FFA /* MVPickerAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC354C3B2F696EB81DC3363 /* MVPickerAlertView.m */; };
 /* End PBXBuildFile section */
@@ -51,7 +52,6 @@
 		659A18CF18E47E9D00310711 /* MVModalTransitions-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MVModalTransitions-Prefix.pch"; sourceTree = "<group>"; };
 		659A18D018E47E9D00310711 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		659A18D118E47E9D00310711 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		659A18D418E47E9D00310711 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		659A18D618E47E9D00310711 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		659A18D718E47E9D00310711 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		659A18D918E47E9D00310711 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -66,6 +66,8 @@
 		659A18FA18E47F4000310711 /* MVPopupTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPopupTransition.m; sourceTree = "<group>"; };
 		659E441D18E481B00054C778 /* MVCustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVCustomAlertView.h; sourceTree = "<group>"; };
 		659E441E18E481B00054C778 /* MVCustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVCustomAlertView.m; sourceTree = "<group>"; };
+		659E442318E48CFB0054C778 /* Main-iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main-iPad.storyboard"; sourceTree = "<group>"; };
+		659E442418E48CFB0054C778 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		ABC354C3B2F696EB81DC3363 /* MVPickerAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPickerAlertView.m; sourceTree = "<group>"; };
 		ABC35D888074DE63546F5208 /* MVPickerAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPickerAlertView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,11 +133,12 @@
 		659A18C718E47E9D00310711 /* MVModalTransitions */ = {
 			isa = PBXGroup;
 			children = (
+				659E442318E48CFB0054C778 /* Main-iPad.storyboard */,
+				659E442418E48CFB0054C778 /* Main.storyboard */,
 				659E441D18E481B00054C778 /* MVCustomAlertView.h */,
 				659E441E18E481B00054C778 /* MVCustomAlertView.m */,
 				659A18D018E47E9D00310711 /* AppDelegate.h */,
 				659A18D118E47E9D00310711 /* AppDelegate.m */,
-				659A18D318E47E9D00310711 /* Main.storyboard */,
 				659A18D618E47E9D00310711 /* ViewController.h */,
 				659A18D718E47E9D00310711 /* ViewController.m */,
 				659A18D918E47E9D00310711 /* Images.xcassets */,
@@ -266,7 +269,8 @@
 			files = (
 				659A18DA18E47E9D00310711 /* Images.xcassets in Resources */,
 				659A18CC18E47E9D00310711 /* InfoPlist.strings in Resources */,
-				659A18D518E47E9D00310711 /* Main.storyboard in Resources */,
+				659E442518E48CFB0054C778 /* Main-iPad.storyboard in Resources */,
+				659E442618E48CFB0054C778 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,14 +357,6 @@
 				659A18CB18E47E9D00310711 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		659A18D318E47E9D00310711 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				659A18D418E47E9D00310711 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		659A18E918E47E9D00310711 /* InfoPlist.strings */ = {
@@ -453,7 +449,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MVModalTransitions/MVModalTransitions-Prefix.pch";
 				INFOPLIST_FILE = "MVModalTransitions/MVModalTransitions-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -467,7 +465,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MVModalTransitions/MVModalTransitions-Prefix.pch";
 				INFOPLIST_FILE = "MVModalTransitions/MVModalTransitions-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
