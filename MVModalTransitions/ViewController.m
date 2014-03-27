@@ -35,7 +35,10 @@
 - (IBAction)popupButtonPressed:(UIButton *)sender {
 
 
-    MVPickerAlertView *picker = [[MVPickerAlertView alloc] initWithTitle:@"Find the intruder" values:@[ @"Apples", @"Oranges", @"Bananas", @"Monkeys" ] presentingViewController:self delegate:self];
+    MVPickerAlertView *picker = [[MVPickerAlertView alloc] initWithTitle:@"Find the intruder"
+                                                                  values:@[ @"Apple", @"Orange", @"Banana", @"Coconut", @"Monkey", @"Mango", @"Pineapple" ]
+                                                presentingViewController:self
+                                                                delegate:self];
     [picker show];
 
 }
