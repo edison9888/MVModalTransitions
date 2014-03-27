@@ -3,7 +3,7 @@ MVModalTransitions - Andrea Bizzotto <bizz84@gmail.com>
 
 -------------------------------------------------------
 
-This project shows how to present custom view controllers modally on iPad and iPhone without recurring to the UIModalPresentationFormSheet and UIModalPresentationPageSheet presentation styles which are only available on iPad.
+This is a light-weight library that shows how to present custom view controllers modally on iPad and iPhone without recurring to the UIModalPresentationFormSheet and UIModalPresentationPageSheet presentation styles which are only available on iPad.
 
 On iOS 7, Apple introduced the new View Controller Transitioning APIs, which are used by the MVModalTransition and MVPopupTransition classes to present non-fullscreen interface-rotation friendly modal view controllers.
 The MVModalTransition class can be used as a base class to implement custom transition and provides support for adding a semi-transparent full-screen background view.
@@ -45,3 +45,4 @@ USAGE
 
 License information can be found in the LICENSE.md file.
 
+![Modal View Controllers Preview](https://github.com/bizz84/MVModalTransitions/raw/master/Screenshots/ModalPortrait.png "Modal View Controllers Preview")
