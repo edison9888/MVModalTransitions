@@ -37,10 +37,8 @@
 
     MVPickerAlertView *picker = [[MVPickerAlertView alloc] initWithTitle:@"Find the intruder"
                                                                   values:@[ @"Apple", @"Orange", @"Banana", @"Coconut", @"Monkey", @"Mango", @"Pineapple" ]
-                                                presentingViewController:self
                                                                 delegate:self];
-    [picker show];
-
+    [self presentViewController:picker animated:YES completion:nil];
 }
 
 #pragma mark - MVCustomAlertViewClientDelegate

@@ -19,9 +19,9 @@
 
 @implementation MVPickerAlertView
 
-- (id)initWithTitle:(NSString *)title values:(NSArray *)values presentingViewController:(UIViewController *)presentingViewController delegate:(id)delegate {
+- (id)initWithTitle:(NSString *)title values:(NSArray *)values delegate:(id)delegate {
 
-    if ((self = [super initWithPresentingViewController:presentingViewController delegate:delegate])) {
+    if ((self = [super initWithDelegate:delegate])) {
 
         self.title = title;
         self.values = values;

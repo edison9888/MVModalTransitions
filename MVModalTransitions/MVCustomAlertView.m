@@ -23,18 +23,16 @@ static CGFloat kButtonsHeight = 44.0f;
 @property (strong) UIButton *cancelButton;
 @property (strong) UIButton *confirmButton;
 @property (weak) id<MVCustomAlertViewClientDelegate> delegate;
-@property(weak, nonatomic) UIViewController *presentingTopViewController;
 @property(strong, nonatomic) MVPopupTransition *animator;
 @end
 
 @implementation MVCustomAlertView
 
 
-- (id)initWithPresentingViewController:(UIViewController *)presentingViewController delegate:(id<MVCustomAlertViewClientDelegate>)delegate {
+- (id)initWithDelegate:(id<MVCustomAlertViewClientDelegate>)delegate {
 
     if ((self = [super init])) {
-        self.presentingTopViewController = presentingViewController;
-        self.presentingTopViewController.transitioningDelegate = self;
+        self.modalPresentationStyle = UIModalPresentationCustom;
         self.transitioningDelegate = self;
         self.delegate = delegate;
         self.animator = [MVPopupTransition createWithSize:[self modalSize] dimBackground:YES shouldDismissOnBackgroundViewTap:NO delegate:nil];
@@ -141,12 +139,6 @@ static CGFloat kButtonsHeight = 44.0f;
 
     DLog(@"Subclass should implement me!");
     return YES;
-}
-
-
-- (void)show {
-    self.modalPresentationStyle = UIModalPresentationCustom;
-    [self.presentingTopViewController presentViewController:self animated:YES completion:nil];
 }
 
 - (void) cancelButtonTitle:(NSString *)cancelTitle confirmButtonTitle:(NSString *)confirmButtonTitle

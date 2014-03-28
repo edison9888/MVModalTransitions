@@ -32,9 +32,7 @@
  */
 @interface MVCustomAlertView : UIViewController<MVCustomAlertViewDelegate>
 
-- (id)initWithPresentingViewController:(UIViewController *)presentingViewController delegate:(id<MVCustomAlertViewClientDelegate>)delegate;
-
-- (void)show;
+- (id)initWithDelegate:(id<MVCustomAlertViewClientDelegate>)delegate;
 
 - (void) cancelButtonTitle:(NSString *)cancelTitle confirmButtonTitle:(NSString *)confirmButtonTitle;
 

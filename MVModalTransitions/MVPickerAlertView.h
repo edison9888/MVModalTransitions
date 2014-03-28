@@ -16,6 +16,6 @@
 
 @interface MVPickerAlertView : MVCustomAlertView
 
-- (id)initWithTitle:(NSString *)title values:(NSArray *)values presentingViewController:(UIViewController *)presentingViewController delegate:(id)delegate;
+- (id)initWithTitle:(NSString *)title values:(NSArray *)values delegate:(id)delegate;
 
 @end
