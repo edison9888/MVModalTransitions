@@ -63,6 +63,12 @@ This example uses Masonry on top of Auto-Layout. The corresponding pod needs to 
 pod install
 </pre>
 
+Scope
+-------------------------------------------------------
+The custom popup transition can be used to present modal view controllers as long as:
+- their size doesn't change with interface rotation
+- their width and height do not exceed the smallest of the screen dimensions
+
 License
 -------------------------------------------------------
 License information can be found in the LICENSE.md file.
