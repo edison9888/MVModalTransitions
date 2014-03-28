@@ -1,17 +1,14 @@
-
-MVModalTransitions - Andrea Bizzotto <bizz84@gmail.com>
-
+MVModalTransitions
 =======================================================
 
+This is a light-weight library to present custom view controllers on iPad and iPhone without recurring to the UIModalPresentationFormSheet and UIModalPresentationPageSheet presentation styles (which are only available on iPad).
 
-This is a light-weight library that shows how to present custom view controllers modally on iPad and iPhone without recurring to the UIModalPresentationFormSheet and UIModalPresentationPageSheet presentation styles which are only available on iPad.
-
-On iOS 7, Apple introduced the new View Controller Transitioning APIs, which are used by the MVModalTransition and MVPopupTransition classes to present non-fullscreen interface-rotation friendly modal view controllers.
-The MVModalTransition class can be used as a base class to implement custom transition and provides support for adding a semi-transparent full-screen background view.
+With iOS 7, Apple introduced the new View Controller Transitioning APIs. These are used by the MVModalTransition and MVPopupTransition classes to present non-fullscreen interface-rotation friendly modal view controllers.
+The MVModalTransition class can be used as a base class to implement custom transitions and provides support for adding a semi-transparent full-screen background view.
 
 This sample project comes with a custom modal picker view that illustrates how to use this.
 
-USAGE
+Usage
 -------------------------------------------------------
 
 <pre>
@@ -45,7 +42,7 @@ USAGE
 @end
 </pre>
 
-INSTALLATION
+Installation
 -------------------------------------------------------
 
 This example uses Masonry on top of Auto-Layout. The corresponding pod needs to be installed before the project can be built.
@@ -54,6 +51,15 @@ This example uses Masonry on top of Auto-Layout. The corresponding pod needs to 
 pod install
 </pre>
 
+License
+-------------------------------------------------------
 License information can be found in the LICENSE.md file.
 
+Preview
+-------------------------------------------------------
+
 ![Modal View Controllers Preview](https://github.com/bizz84/MVModalTransitions/raw/master/Screenshots/ModalPortrait.png "Modal View Controllers Preview")
+
+Contact
+-------------------------------------------------------
+Andrea Bizzotto - <bizz84@gmail.com>
