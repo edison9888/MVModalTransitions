@@ -12,24 +12,25 @@ Usage
 -------------------------------------------------------
 
 <pre>
-@implementation PresentingViewController
+/* -- Presented view controller code -- */
+@interface MVCustomAlertView ()<UIViewControllerTransitioningDelegate>
+@property(strong, nonatomic) MVPopupTransition *animator;
+@end
 
-// Call this on viewDidLoad
-- (void)setupAnimator {
-  self.animator = [MVPopupTransition createWithSize:CGSizeMake(300, 300) dimBackground:YES shouldDismissOnBackgroundViewTap:NO delegate:nil];
+@implementation MVCustomAlertView
+
+- (id)init {
+
+    if ((self = [super init])) {
+        self.modalPresentationStyle = UIModalPresentationCustom;
+        self.transitioningDelegate = self;
+        self.animator = [MVPopupTransition createWithSize:CGSizeMake(300, 300) dimBackground:YES shouldDismissOnBackgroundViewTap:NO delegate:nil];
+    }
+    return self;
 }
-
-// Handler
-- (void)presentModalViewController {
-
-  MyViewController *vc = [MyViewController new];
-  vc.transitioningDelegate = self;
-  vc.modalPresentationStyle = UIModalPresentationCustom;
-  [self presentViewController:vc animated:YES completion:nil];  
-}
-
 
 #pragma mark - UIViewControllerTransitioningDelegate
+
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
 {
     return self.animator;
@@ -40,6 +41,17 @@ Usage
     return self.animator;
 }
 @end
+
+
+/* -- Presenting view controller code -- */
+@implementation PresentingViewController
+
+// Handler
+- (void)buttonPressed {
+
+  MVCustomAlertView *vc = [MyViewController new];
+  [self presentViewController:vc animated:YES completion:nil];  
+}
 </pre>
 
 Installation
